@@ -1,5 +1,9 @@
 module.exports = function(sails) {
-
+    function exec(){
+        sails.log("test wakeonlan");
+    };
+    
+    
     function wakeonlan() {
 
       var wol = require('wake-on-lan');
@@ -14,8 +18,9 @@ module.exports = function(sails) {
         }
       });
     }
-
+    
     return {
-        wakeonlan: wakeonlan
+        wakeonlan: wakeonlan,
+        exec: exec      
     };
 };
