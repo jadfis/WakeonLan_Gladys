@@ -1,6 +1,7 @@
 module.exports = function(sails) {
     function exec(){
         sails.log("test wakeonlan");
+        wakeonlan();
     };
     
     
